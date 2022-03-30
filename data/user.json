@@ -1,0 +1,25 @@
+{
+    "user1":{
+        "id": 1,
+        "nickname": "Chuck",
+        "weight": 80,
+        "hight": 180,
+        "age": 25 
+    },
+
+    "user2": {
+        "id": 2,
+        "nickname": "Lenin",
+        "weight": 92,
+        "hight": 189,
+        "age": 30
+    },
+
+    "user3": {
+        "id": 3,
+        "nickname": "John",
+        "weight": 76,
+        "hight": 172,
+        "age": 24
+    }
+}

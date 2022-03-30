@@ -1,0 +1,20 @@
+{
+    "name": "calories PWA calculator",
+    "short_name": "calories PWA",
+    "start_url": ".",
+    "background_color": "#6dcdb1",
+    "theme_color": "#009578",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "img/logo192.png",
+            "sizes": "192x192",
+            "type": "img/png"
+        },
+        {
+            "src": "img/logo512.png",
+            "sizes": "512x512",
+            "type": "img/png"
+        }
+    ]
+}

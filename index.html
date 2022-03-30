@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#009578">
+    <title>BMB CALC</title>
+    <link rel="stylesheet" href="css/master.css" >
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="img/logo192.png">
+  </head>
+  
+  <body class="container">
+    <script src="js/index.js" type="text/javascript"></script>
+    <script src="js/calculator.js" type="text/javascript"></script>
+
+    <header id="header"> 
+      <h3>BMB Calculator</h3>
+    </header>
+
+    <div class="main_calc">
+      <form onsubmit="return false" action="#" target="_self">
+
+        <label for="gender">Gender</label>
+          <select name="gender" id="gender">
+            <option value="woman">Woman</option>
+            <option value="man">Man</option>    
+          </select>
+      
+        <label for="weight">Weight (kg)</label>
+          <input type="number" min="10" max="250" step="0.1" id="weight" name="weightInput" placeholder="Weight in kg..." required>
+        <!--
+          <div>
+            <div>
+              <input type="range" min="10" max="250" value="0" class="slider" id="weight" name="weightRange" oninput="this.form.weightInput.value=this.value">
+              <input type="number" min="10" max="250" step="0.1" id="weight" name="weightInput" placeholder="Weight in kg..." oninput="this.form.weightRange.value=this.value" required>
+            </div>
+          </div>
+        -->
+        <label for="high">High (cm)</label>
+          <input type="number" min="0" max="300" id="high" name="high" placeholder="High in cm..." required>
+          
+
+        <label for="age">Age</label>
+          <input type="number" min="0" max="120" id="age" name="age" placeholder="Age..." required>
+        <label for="fat">Fat (%)</label>
+          <input type="number" min="0" max="100" step="0.1" id="fat" name="fat" placeholder="Fat in %...">
+
+        <label for="activity">Activity</label>
+          <select name="activity" id="activity">
+            <option value="1.2">No activity (1.2 x BMR)</option>
+            <option value="1.375">Low activity (1.375 x BMR)</option>
+            <option value="1.55">Medium activity (1.55 x BMR)</option>
+            <option value="1.9">High activity (1.9 x BMR)</option>     
+          </select>
+
+        <input type="submit" id="calculate" value="Calculate" onclick="calculation()">
+        
+      </form>
+    </div>
+
+    <div class="result">
+      <h4>BMR</h4>
+      <span id="c_bmr"></span>
+      <span id="c_bmr_kj"></span><br>
+      <span id="bmr"></span>
+      <span id="bmr_kj"></span>
+      <h4>BMI</h4>
+      <span id="bmi"></span>
+      <h4>MACROS</h4>
+      <span id="protein"></span><br>
+      <span id="fats"></span><br>
+      <span id="carbos"></span>
+    </div>
+    
+  </body>
+  
+  <footer id="footer">
+    <p>DEMO VERSION</p>
+  </footer>
+
+</html>
